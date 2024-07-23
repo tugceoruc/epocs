@@ -284,7 +284,7 @@ def pocket_list_paths_to_absolute(path_pocket_list: str, path_test: str) -> str:
 def test_full_integration(
     tmp_path,
     path_epocs_run_script,
-    path_example,
+    path_examples,
     path_data,
     esm_parameters_path,
     use_gpu,
@@ -296,8 +296,8 @@ def test_full_integration(
     Integration test that checks the full pipeline and requires running ESM
     """
     path_test = str(tmp_path)
-    path_example_abs = pocket_list_paths_to_absolute(path_example, path_test)
-    command = f"cd {tmp_path}; python {path_epocs_run_script} -f {path_example_abs} \
+    path_examples_abs = pocket_list_paths_to_absolute(path_examples, path_test)
+    command = f"cd {tmp_path}; python {path_epocs_run_script} -f {path_examples_abs} \
                                             -pp {esm_parameters_path} \
                                             -np 2 \
                                             -cmin 1.6 \

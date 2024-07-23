@@ -22,10 +22,10 @@ def path_data() -> str:
 
 
 @pytest.fixture
-def path_example() -> str:
+def path_examples() -> str:
     return os.path.join(
         str(pathlib.Path(__file__).parent.parent.resolve()),
-        "example",
+        "examples",
         "pocket_list_test",
     )
 
