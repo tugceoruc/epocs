@@ -1,5 +1,5 @@
 # EPoCS
-This package implements EPoCS - an ESM-based Pocket Cross-Similarity metric for the comparison and contextualisation of protein binding sites, as well as systematic debiasing of train-test splits for pocket-centric machine-learning models. EPoCS combines protein language models (specifically, ESM-2) with real-space tesselation to generate vector embeddings for protein binding sites. The embeddings are the basis of the EPoCS similarity metric that gives rise to the _pocket atlas_. See the [bioRxiv](TODO) preprint for details.
+This package implements EPoCS - an ESM-based Pocket Cross-Similarity metric for the comparison and contextualisation of protein binding sites, as well as systematic debiasing of train-test splits for pocket-centric machine-learning models. EPoCS combines protein language models (specifically, ESM-2) with real-space tesselation to generate vector embeddings for protein binding sites. The embeddings are the basis of the EPoCS similarity metric that gives rise to the _pocket atlas_. See the [bioRxiv](TODO) preprint for details. An interactive version of the atlas is available [here](https://floatlab.io/public/epocs).
 
 <div align="center">
     <img src="docs/epocs_workflow.png" width="1000px">
