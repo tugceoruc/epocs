@@ -1,5 +1,5 @@
 # EPoCS
-This package implements EPoCS - an ESM-based Pocket Cross-Similarity metric for the comparison and contextualisation of protein binding sites, as well as systematic debiasing of train-test splits for pocket-centric machine-learning models. EPoCS combines protein language models (specifically, ESM-2) with real-space tesselation to generate vector embeddings for protein binding sites. The embeddings are the basis of the EPoCS similarity metric that gives rise to the _pocket atlas_. See the [bioRxiv](TODO) preprint for details. An interactive version of the atlas is available [here](https://floatlab.io/public/epocs).
+This package implements EPoCS - an ESM-based Pocket Cross-Similarity metric for the comparison and contextualisation of protein binding sites, as well as systematic debiasing of train-test splits for pocket-centric machine-learning models. EPoCS combines protein language models (specifically, ESM-2) with real-space tesselation to generate vector embeddings for protein binding sites. The embeddings are the basis of the EPoCS similarity metric that gives rise to the _pocket atlas_. See the [bioRxiv](https://www.biorxiv.org/content/10.1101/2024.07.24.604735v1) preprint for details. An interactive version of the atlas is available [here](https://floatlab.io/public/epocs).
 
 <div align="center">
     <img src="docs/epocs_workflow.png" width="1000px">
@@ -48,11 +48,4 @@ python run_epocs.py -f ./example/pocket_list -pp /path/to/esm2_t36_3B_UR50D.pt -
 
 ## Citation
 
-The manuscript is available on bioRxiv, please cite if you found the method and/or code useful:
-```
-@article{oruc_epocs_2024,
-    doi = {...},
-    url = {...},
-    author = {...},
-}
-```
+The manuscript has been published by `Bioinformatics` - please [cite](https://academic.oup.com/bioinformatics/article/41/6/btaf284/8176567) if you found our work useful.
